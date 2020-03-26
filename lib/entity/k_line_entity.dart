@@ -18,9 +18,9 @@ class KLineEntity extends KEntity {
     high = (json['high'] as num)?.toDouble();
     low = (json['low'] as num)?.toDouble();
     close = (json['close'] as num)?.toDouble();
-    vol = (json['vol'] as num)?? 0.0;
+    vol = (json['vol'] as num)?.toDouble();
     amount = (json['amount'] as num)?.toDouble();
-    count = (json['count'] as num).toInt();
+    count = (json['count'] as num)?.toInt();
     id = (json['id'] as num)?.toInt();
   }
 
